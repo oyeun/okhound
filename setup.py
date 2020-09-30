@@ -3,12 +3,11 @@
 ##############################################################################
 import os
 import sys
-from distutils import log
-from distutils.core import setup, Extension
+from setuptools import setup, Extension
 
 if sys.platform.startswith('win'):
     # not supported
-    log.debug('windows platform not supported')
+    print('windows platform not supported')
     exit(0)
 elif sys.platform.startswith('darwin'):
     # osx
@@ -31,7 +30,7 @@ elif sys.platform.startswith('linux'):
                             library_dirs=["libdir_linux"])
 else:
     # unknown
-    log.debug('unknown platform - could not install')
+    print('unknown platform - could not install')
     exit(0)
 
 setup(name = 'OkHound',
