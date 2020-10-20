@@ -33,10 +33,10 @@ else:
     print('unknown platform - could not install')
     exit(0)
 
-setup(name = 'OkHound',
-      version = '0.1',
-      description = "'Ok Hound' phrase spotter",
-      ext_modules = [module1],
+setup(name='OkHound',
+      version='0.2',
+      description="'Ok Hound' phrase spotter",
+      ext_modules=[module1],
       long_description=open('README.md').read(),
       long_description_content_type='text/markdown',
       author='Soundhound Inc.',
