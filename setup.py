@@ -42,6 +42,6 @@ setup(name='OkHound',
       author='Soundhound Inc.',
       maintainer='Oliver Yeun',
       url='https://github.com/oyeun/okhound',
-      download_url='https://github.com/oyeun/okhound/archive/0.1.tar.gz',
+      download_url='https://github.com/oyeun/okhound/archive/0.2.tar.gz',
       keywords=['OkHound']
       )
