@@ -16,7 +16,7 @@ elif sys.platform.startswith('darwin'):
                         libraries=["PhraseSpotter"],
                         library_dirs=["libdir_osx"])
 elif sys.platform.startswith('linux'):
-    if os.uname()[4].startsWith("arm"):
+    if os.uname()[4].startswith("arm"):
         # python
         module1 = Extension("okhound",
                             sources=["pyOkHound.cpp"],
@@ -34,7 +34,7 @@ else:
     exit(0)
 
 setup(name='OkHound',
-      version='0.2',
+      version='0.2.1',
       description="'Ok Hound' phrase spotter",
       ext_modules=[module1],
       long_description=open('README.md').read(),
@@ -42,6 +42,6 @@ setup(name='OkHound',
       author='Soundhound Inc.',
       maintainer='Oliver Yeun',
       url='https://github.com/oyeun/okhound',
-      download_url='https://github.com/oyeun/okhound/archive/0.2.tar.gz',
+      download_url='https://github.com/oyeun/okhound/archive/0.2.1.tar.gz',
       keywords=['OkHound']
       )
